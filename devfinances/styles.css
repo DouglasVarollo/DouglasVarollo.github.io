@@ -8,6 +8,7 @@
 * {
   margin: 0;
   padding: 0;
+  transition: color 0.1s, background-color 0.3s;
   box-sizing: border-box;
 }
 
@@ -92,6 +93,11 @@ header {
   padding: 2rem 0 10rem 0;
   background-color: #2d4a22;
   text-align: center;
+}
+
+header img {
+  user-select: none;
+  cursor: pointer;
 }
 
 #logo {
@@ -264,4 +270,75 @@ input {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
   }
+}
+
+body.dark-theme {
+  background-color: #1f2223;
+}
+
+body.dark-theme h2 {
+  color: #a5b7cc;
+}
+
+body.dark-theme header {
+  background-color: #243b1b;
+}
+
+body.dark-theme .card {
+  color: #a5b7cc;
+  background-color: #181a1b;
+}
+
+body.dark-theme .card.green {
+  color: #e8e6e3;
+  background-color: #3a881e;
+}
+
+body.dark-theme .button.cancel {
+  color: #eb3b3b;
+  border-color: #9d1010;
+}
+
+body.dark-theme .button.new {
+  color: #7fdb5e;
+}
+
+body.dark-theme table tbody td,
+body.dark-theme table thead th {
+  background-color: #181a1b;
+}
+
+body.dark-theme #data-table,
+body.dark-theme td.description {
+  color: #969cb3;
+}
+
+body.dark-theme td.expense {
+  color: #eb3b3b;
+}
+
+body.dark-theme td.income {
+  color: #5eed9f;
+}
+
+body.dark-theme footer {
+  color: #a5b7cc;
+}
+
+body.dark-theme .modal {
+  background-color: #1f2223;
+}
+
+body.dark-theme .modal input {
+  color: #e8e6e3;
+  background-color: #181a1b;
+}
+
+body.dark-theme .modal small {
+  color: #e8e6e3;
+}
+
+.input-group.actions button {
+  color: #e8e6e3;
+  background-color: #3a881e;
 }

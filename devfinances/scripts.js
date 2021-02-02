@@ -214,4 +214,10 @@ const Form = {
   }
 };
 
+const Theme = {
+  toggle() {
+    document.body.classList.toggle('dark-theme');
+  }
+};
+
 App.init();
