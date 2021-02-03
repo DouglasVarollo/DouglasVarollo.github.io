@@ -172,6 +172,12 @@ table tbody td {
   background-color: #fff;
 }
 
+table tbody td img {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
 td.description {
   color: var(--dark-blue);
 }

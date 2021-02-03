@@ -9,14 +9,14 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
     <header>
       <img
         alt="Logo Dev Finances"
         onclick="Theme.toggle()"
-        src="assets/logo.svg"
+        src="assets/images/logo.svg"
       />
     </header>
 
@@ -28,7 +28,7 @@
           <h3>
             <span>Entradas</span>
 
-            <img alt="Imagem de entradas" src="assets/income.svg" />
+            <img alt="Imagem de entradas" src="assets/images/income.svg" />
           </h3>
           <p id="incomeDisplay">R$ 0,00</p>
         </div>
@@ -37,7 +37,7 @@
           <h3>
             <span>Saídas</span>
 
-            <img alt="Imagem de saídas" src="assets/expense.svg" />
+            <img alt="Imagem de saídas" src="assets/images/expense.svg" />
           </h3>
           <p id="expenseDisplay">R$ 0,00</p>
         </div>
@@ -46,7 +46,7 @@
           <h3>
             <span>Total</span>
 
-            <img alt="Imagem de total" src="assets/total.svg" />
+            <img alt="Imagem de total" src="assets/images/total.svg" />
           </h3>
           <p id="totalDisplay">R$ 0,00</p>
         </div>
@@ -63,6 +63,7 @@
               <th>Descrição</th>
               <th>Valor</th>
               <th>Data</th>
+              <th></th>
               <th></th>
             </tr>
           </thead>
@@ -129,6 +130,17 @@
       <p>dev.finance$</p>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/dom.js"></script>
+    <script src="assets/js/form.js"></script>
+    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/storage.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/transaction.js"></script>
+    <script src="assets/js/utils.js"></script>
+    <script>
+      App.init();
+      Theme.get();
+    </script>
   </body>
 </html>
